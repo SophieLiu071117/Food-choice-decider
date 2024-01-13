@@ -8,5 +8,11 @@ for i in range(1,num_choices+1):
 food_choice = random.choice(Food_choice_list)
 print(Food_choice_list)
 print("Your food choice is " + food_choice)
+reroll = input("Do you want to reroll? Types Y for Yes and N for No: ")
+while reroll == "Y":
+  for i in range(1,num_choices+1):
+    food_choice = random.choice(Food_choice_list)
+    print("Your food choice is " + food_choice)
+    reroll = input("Do you want to reroll? Types Y for Yes and N for No:")
 
   
